@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bala B's portfolio, projects, research and technical notes.">
+    <meta name="theme-color" content="#f5f3ef">
+    <title>Research Journal | Bala B</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("bala-portfolio-theme");
+            document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+        } catch (error) {
+            document.documentElement.dataset.theme = "light";
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <div class="brand-group">
+                <a class="brand" href="index.html">BALA B</a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+                    <span class="theme-symbol" aria-hidden="true">☾</span>
+                </button>
+            </div>
+            <div class="nav-tools">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            </div>
+            <div class="nav-links" id="primary-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="expertise.html">Expertise & Lab</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="research.html" aria-current="page">Research</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="workspace.html">Developer Workspace</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">04 / RESEARCH</p>
+            <h1>Notes from the learning process.</h1>
+            <p class="hero-description">A dated record of topics studied, papers explored, experiments and questions worth following up.</p>
+        </section>
+        
+        <section class="content-section">
+            <p class="eyebrow">STUDY LOG</p>
+            <h2>Research entries</h2>
+            <p>Research notes, paper explorations and questions worth following up.</p>
+            <!-- GENERATED:research:START -->
+<!-- GENERATED:research:END -->
+        </section>
+
+        <section class="content-section">
+            <p class="eyebrow">PAPER NOTES</p>
+            <h2>Reading with context</h2>
+            <p>Paper summaries will distinguish the authors' claims, the evidence presented and my own interpretation.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Designed and developed by Bala B.</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/github.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>

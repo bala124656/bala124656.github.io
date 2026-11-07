@@ -1,0 +1,22 @@
+/* Subtle page entrance animation */
+@keyframes intro-enter {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.page-hero {
+    animation: intro-enter 420ms ease both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-hero {
+        animation: none;
+    }
+}

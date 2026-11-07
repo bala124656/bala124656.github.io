@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bala B's portfolio, projects, research and technical notes.">
+    <meta name="theme-color" content="#f5f3ef">
+    <title>Developer Workspace | Bala B</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("bala-portfolio-theme");
+            document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+        } catch (error) {
+            document.documentElement.dataset.theme = "light";
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <div class="brand-group">
+                <a class="brand" href="index.html">BALA B</a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+                    <span class="theme-symbol" aria-hidden="true">☾</span>
+                </button>
+            </div>
+            <div class="nav-tools">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            </div>
+            <div class="nav-links" id="primary-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="expertise.html">Expertise & Lab</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="research.html">Research</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="workspace.html" aria-current="page">Developer Workspace</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">06 / DEVELOPER WORKSPACE</p>
+            <h1>My work, connected to GitHub.</h1>
+            <p class="hero-description">A live browser for my public repositories, fetched directly from GitHub.</p>
+        </section>
+        
+        <section class="content-section">
+            <p class="eyebrow">PUBLIC REPOSITORIES</p>
+            <h2>Repository explorer</h2>
+            
+                <div class="repo-controls">
+                    <label class="sr-only" for="repo-search">Search repositories</label>
+                    <input id="repo-search" type="search" placeholder="Search repositories..." autocomplete="off">
+                    <label class="sr-only" for="repo-sort">Sort repositories</label>
+                    <select id="repo-sort">
+                        <option value="updated">Recently updated</option>
+                        <option value="stars">Most stars</option>
+                        <option value="name">Name A–Z</option>
+                    </select>
+                </div>
+                <p id="repo-status" class="muted" aria-live="polite">Loading public repositories for bala124656…</p>
+                <div id="github-repositories" class="repo-grid"></div>
+            
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Designed and developed by Bala B.</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/github.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
