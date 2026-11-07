@@ -1,0 +1,41 @@
+@media (max-width: 1050px) {
+    .navigation { flex-wrap: wrap; }
+    .nav-links { justify-content: flex-start; }
+}
+@media (max-width: 720px) {
+    .site-header { position: relative; padding: 15px 6%; }
+    .navigation { display: grid; grid-template-columns: 1fr auto; gap: 12px; }
+    .brand-group { grid-column: 1; grid-row: 1; }
+    .nav-tools { grid-column: 2; grid-row: 1; justify-self: end; }
+    .menu-toggle { display: inline-grid; }
+    .nav-links { display: none; grid-column: 1 / -1; flex-direction: column; align-items: flex-start; gap: 11px; padding: 8px 0 3px; }
+    .nav-links.is-open { display: flex; }
+    .page-hero { min-height: 390px; padding: 76px 7%; }
+    .content-section { padding: 62px 7%; }
+    h1 { font-size: clamp(40px, 11vw, 62px); letter-spacing: -.04em; }
+    .hero-description { font-size: 15px; }
+    .site-footer { padding: 25px 7%; flex-direction: column; }
+}
+
+@media (max-width: 520px) {
+    .home-name { font-size: clamp(68px, 19vw, 104px); }
+}
+
+
+@media (max-width: 520px) {
+    .home-identity {
+        gap: 16px;
+        align-items: center;
+    }
+    .github-avatar-link {
+        width: 64px;
+        height: 64px;
+    }
+}
+@media (max-width: 380px) {
+    .home-identity {
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        gap: 14px;
+    }
+}

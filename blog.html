@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bala B's portfolio, projects, research and technical notes.">
+    <meta name="theme-color" content="#f5f3ef">
+    <title>Blog | Bala B</title>
+    <script>
+        try {
+            const savedTheme = localStorage.getItem("bala-portfolio-theme");
+            document.documentElement.dataset.theme = savedTheme === "dark" ? "dark" : "light";
+        } catch (error) {
+            document.documentElement.dataset.theme = "light";
+        }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navigation" aria-label="Main navigation">
+            <div class="brand-group">
+                <a class="brand" href="index.html">BALA B</a>
+                <button class="theme-toggle" type="button" aria-label="Switch to dark theme" title="Switch theme">
+                    <span class="theme-symbol" aria-hidden="true">☾</span>
+                </button>
+            </div>
+            <div class="nav-tools">
+                <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">Menu</button>
+            </div>
+            <div class="nav-links" id="primary-navigation">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="expertise.html">Expertise & Lab</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="research.html">Research</a>
+                    <a href="blog.html" aria-current="page">Blog</a>
+                    <a href="workspace.html">Developer Workspace</a>
+                    <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">05 / WRITING</p>
+            <h1>Ideas worth writing down.</h1>
+            <p class="hero-description">Longer-form articles, tutorials, technical breakdowns and personal perspectives.</p>
+        </section>
+        
+        <section class="content-section">
+            <p class="eyebrow">ARTICLES</p>
+            <h2>Writing and explanations</h2>
+            <p>Polished tutorials, technical explanations and perspectives. Ongoing study notes belong in the Research Journal.</p>
+            <!-- GENERATED:blog:START -->
+<!-- GENERATED:blog:END -->
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>Designed and developed by Bala B.</p>
+        <a href="contact.html">Contact</a>
+    </footer>
+
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/github.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
